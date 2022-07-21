@@ -15,6 +15,9 @@
 		F64600442887EC2300862165 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64600432887EC2300862165 /* CollectionViewController.swift */; };
 		F64600462887EC3400862165 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64600452887EC3400862165 /* CollectionViewCell.swift */; };
 		F646004A2887F0F300862165 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64600492887F0F300862165 /* BookModel.swift */; };
+		F6460052288940CE00862165 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6460051288940CE00862165 /* SecondViewController.swift */; };
+		F6460054288940D700862165 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6460053288940D700862165 /* ThirdViewController.swift */; };
+		F646005628894A6F00862165 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646005528894A6F00862165 /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		F64600432887EC2300862165 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		F64600452887EC3400862165 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F64600492887F0F300862165 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		F6460051288940CE00862165 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F6460053288940D700862165 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		F646005528894A6F00862165 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				F64600492887F0F300862165 /* BookModel.swift */,
 				F64600452887EC3400862165 /* CollectionViewCell.swift */,
 				F64600432887EC2300862165 /* CollectionViewController.swift */,
+				F646005528894A6F00862165 /* FirstViewController.swift */,
+				F6460051288940CE00862165 /* SecondViewController.swift */,
+				F6460053288940D700862165 /* ThirdViewController.swift */,
 				F64600382887E31400862165 /* Assets.xcassets */,
 				F646003A2887E31400862165 /* LaunchScreen.storyboard */,
 				F646003D2887E31400862165 /* Info.plist */,
@@ -147,7 +156,10 @@
 				F646004A2887F0F300862165 /* BookModel.swift in Sources */,
 				F64600442887EC2300862165 /* CollectionViewController.swift in Sources */,
 				F64600302887E31400862165 /* AppDelegate.swift in Sources */,
+				F646005628894A6F00862165 /* FirstViewController.swift in Sources */,
+				F6460052288940CE00862165 /* SecondViewController.swift in Sources */,
 				F64600462887EC3400862165 /* CollectionViewCell.swift in Sources */,
+				F6460054288940D700862165 /* ThirdViewController.swift in Sources */,
 				F64600322887E31400862165 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

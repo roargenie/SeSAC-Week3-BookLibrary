@@ -10,14 +10,11 @@ class CollectionViewController: UICollectionViewController {
     let bookList = BookInfo()
     
     
-    
-    
-    
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "List"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(rightBarButtonItemTapped))
 
         let layout = UICollectionViewFlowLayout()
         let spacing: CGFloat = 5
@@ -25,17 +22,24 @@ class CollectionViewController: UICollectionViewController {
         
         layout.itemSize = CGSize(width: width, height: width)
         layout.scrollDirection = .vertical
-        layout.sectionInset = UIEdgeInsets(top: 0, left: spacing, bottom: 0, right: spacing)
-        layout.minimumLineSpacing = spacing
+        layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
+        //layout.minimumLineSpacing = spacing
         layout.minimumInteritemSpacing = spacing
         collectionView.collectionViewLayout = layout
 
         
     }
-
+    @objc func rightBarButtonItemTapped() {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = sb.instantiateViewController(withIdentifier: FirstViewController.identifier) as? FirstViewController else {
+            return
+        }
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true)
+    }
     
-
-
+    
 }
 
 
@@ -80,17 +84,21 @@ extension CollectionViewController {
         
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "ReuseIdentifiers", for: indexPath)
         
-//        if indexPath.section == 0 {
-//            sectionLabel.text = "베스트 셀러"
-//            sectionLabel.font = .boldSystemFont(ofSize: 20)
-//        } else if indexPath.section == 1 {
-//            sectionLabel.text = "나의 책 보관함"
-//            sectionLabel.font = .boldSystemFont(ofSize: 20)
-//        } else {
-//
-//        }
-        
         return headerView
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = sb.instantiateViewController(withIdentifier: SecondViewController.identifier) as? SecondViewController else {
+            return
+        }
+                
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        
+        
+        
     }
     
 }
